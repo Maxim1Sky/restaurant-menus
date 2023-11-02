@@ -12,6 +12,8 @@ const db = new Sequelize({
   },
 });
 
+db.authenticate();
+
 module.exports = {
   db,
   DataTypes,
