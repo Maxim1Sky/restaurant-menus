@@ -5,17 +5,15 @@ const { Sequelize } = require("sequelize");
 
 class Restaurant extends Model {}
 
-Restaurant.init({});
-
-User.init(
+Restaurant.init(
   {
     name: DataTypes.STRING,
-    age: DataTypes.INTEGER,
-    password: DataTypes.STRING,
+    location: DataTypes.STRING,
+    cuisine: DataTypes.STRING,
   },
   {
     sequelize: db,
-    modelName: "tableNameCool",
+    modelName: "Restaurant",
     freezeTableName: true,
   }
 );
